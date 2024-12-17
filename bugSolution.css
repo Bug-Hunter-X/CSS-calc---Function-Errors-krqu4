@@ -1,0 +1,23 @@
+/* bugSolution.css */
+
+.container {
+  width: calc(50% - 20px);
+  /* Corrected: clear unit declaration and avoided nested calc() */
+}
+
+.element {
+  width: calc( (100vw - 40px) / 3 );
+  /* Corrected: proper nesting and consistent unit handling */
+}
+
+/*Ensure all units are explicitly declared*/
+.anotherElement {
+  height: calc(100vh - 100px);
+  /*Explicit unit for better calculation*/
+}
+
+/* Avoid complex nested calculations */
+.anotherElement2 {
+  width: 200px;
+  /* Instead of a complex nested calculation, use explicit values when possible */
+} 
